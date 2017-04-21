@@ -30,8 +30,11 @@ h1.title {
   width: 100%;
 }
 
-button.upload {
+button {
   height: 40px;
+}
+
+button.upload {
   width: 100%;
 }
 
@@ -64,7 +67,6 @@ input.slider {
 }
 
 #downloadModal .buttonGroup button {
-  height: 40px;
   max-width: 60px;
   margin: 5px;
   flex: 1;
@@ -72,4 +74,20 @@ input.slider {
 
 #downloadModal .buttonGroup a#dl {
   display: none;
+}
+
+@media only screen and (max-device-width: 500px) {
+  body {
+    font-size: 24px;
+  }
+  .center {
+    flex-direction: column;
+  }
+  button {
+    height: 80px;
+    font-size: 1em;
+  }
+  input.slider {
+    height: 80px;
+  }
 }
