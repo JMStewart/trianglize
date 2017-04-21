@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trianglize</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="src/style.css"></link>
+  </head>
+  <body>
+    <div id="content">
+      <h1 class="title">Trianglize</h1>
+      <div class="center">
+        <div class="canvasBlock">
+          <canvas id="image"></canvas>
+          <br />
+          <button class="upload" type="button" onclick="document.getElementById('fileInput').click();">Upload Image</button>
+          <input id="fileInput" type="file" onChange="handleFiles(this.files)"></input>
+        </div>
+        <div class="canvasBlock">
+          <canvas id="resultCanvas"></canvas>
+          <div id="downloadModal">
+            <h3>Do you want to download this image?</h3>
+            <div class="buttonGroup">
+              <button onClick="cancelDownload()">No</button>
+              <button onClick="download()">Yes</button>
+              <a id="dl" download="Canvas.png" href="#"></a>
+            </div>
+          </div>
+          <br />
+          <input class="slider" type="range" min="50" max="1000" value="500" step="50" onChange="trianglesChanged(this.value);"></input>
+        </div>
+      </div>
+    </div>
+    <script src="build/bundle.js"></script>
+  </body>
+</html>

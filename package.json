@@ -1,0 +1,27 @@
+{
+  "name": "trianglize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "cdt2d": "^1.0.0",
+    "clean-pslg": "^1.1.2",
+    "color-diff": "^1.0.0",
+    "d3-color": "^1.0.3",
+    "d3-selection": "^1.0.5",
+    "d3-shape": "^1.0.6",
+    "d3-voronoi": "^1.1.2",
+    "dat.gui": "^0.6.1",
+    "poly2tri": "^1.5.0"
+  }
+}

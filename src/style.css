@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+#content {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1.title {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.canvasBlock {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+}
+
+.canvasBlock canvas {
+  width: 100%;
+}
+
+button.upload {
+  height: 40px;
+  width: 100%;
+}
+
+input#fileInput {
+  display: none;
+}
+
+input.slider {
+  width: 100%;
+  height: 40px;
+}
+
+#resultCanvas {
+  cursor: pointer;
+}
+
+#downloadModal {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  right: 10px;
+  background-color: #e3e3e3;
+  padding: 10px;
+  display: none;
+}
+
+#downloadModal .buttonGroup {
+  display: flex;
+  justify-content: center;
+}
+
+#downloadModal .buttonGroup button {
+  height: 40px;
+  max-width: 60px;
+  margin: 5px;
+  flex: 1;
+}
+
+#downloadModal .buttonGroup a#dl {
+  display: none;
+}
